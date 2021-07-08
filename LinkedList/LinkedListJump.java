@@ -11,24 +11,24 @@ public class LinkedListJump {
 
     public static void main(String[] args)
     {
-        LLNode node = new LLNode(2);
+        SinglyNode node = new SinglyNode(2);
 
-        LLNode head = node;
+        SinglyNode head = node;
 
-        node.next = new LLNode(1);
+        node.next = new SinglyNode(1);
         node = node.next;
 
-        node.next = new LLNode(4);
+        node.next = new SinglyNode(4);
         node = node.next;
         
-        node.next = new LLNode(1);
+        node.next = new SinglyNode(1);
         node = node.next;
         
         Solution solution = new Solution();
         printLinkedList(solution.solve(head));
     }
 
-    public static void printLinkedList(LLNode node) {
+    public static void printLinkedList(SinglyNode node) {
         
         while(node != null)
         {
@@ -39,23 +39,14 @@ public class LinkedListJump {
     
 }
 
-class LLNode {
-    int val;
-    LLNode next;
-
-    LLNode(int val) {
-        this.val = val;
-    }
-}
-
 class Solution {
-    public LLNode solve(LLNode node) {
+    public SinglyNode solve(SinglyNode node) {
 
-        LLNode head = node;
+        SinglyNode head = node;
 
         while (node != null) {
             int i = node.val;
-            LLNode current = node;
+            SinglyNode current = node;
 
             while (i > 0 && node != null) {
                 node = node.next;

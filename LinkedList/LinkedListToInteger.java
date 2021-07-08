@@ -13,9 +13,9 @@ import java.util.List;
  */
 public class LinkedListToInteger {
     public static void main(String[] args) {
-        LLNode head = new LLNode(1);
-        head.next = new LLNode(0);
-        head.next.next = new LLNode(0);
+        SinglyNode head = new SinglyNode(1);
+        head.next = new SinglyNode(0);
+        head.next.next = new SinglyNode(0);
 
         Solution solution = new Solution();
         System.out.println(solution.solve(head));
@@ -24,7 +24,7 @@ public class LinkedListToInteger {
 }
 
 class Solution {
-    public int solve(LLNode node) {
+    public int solve(SinglyNode node) {
 
         List<Integer> list = new ArrayList<>();
         int power = 0;
@@ -39,14 +39,5 @@ class Solution {
         }
 
         return power;
-    }
-}
-
-class LLNode {
-    int val;
-    LLNode next;
-
-    public LLNode(int val) {
-        this.val = val;
     }
 }
