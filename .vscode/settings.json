@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "Strings",
+        "Stacks",
+        "LinkedList",
+        "Arrays/Stacks",
+        ""
+    ]
+}
