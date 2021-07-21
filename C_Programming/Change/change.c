@@ -19,7 +19,7 @@ void change()
     amount -= (numFifty * FIFTY_CENT);
 
     int numTwenty = amount / TWENTY_CENT;
-    amount -= numTwenty * TWENTY_CENT;
+    amount -= (numTwenty * TWENTY_CENT);
 
     int numTen = amount / TEN_CENT;
     amount -= (numTen * TEN_CENT);
