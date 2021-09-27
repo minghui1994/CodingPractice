@@ -40,8 +40,12 @@ func main() {
 	delete(statePopulations, "Georgia")
 
 	// testPop will be 0, the ok is a var to tell if the key exist
-	testPop, ok := statePopulations["Georgia"]
-	fmt.Println("Population in Georgia: " + strconv.Itoa(testPop) + "\nGeorgia exist in map: " + strconv.FormatBool(ok))
+	//testPop, ok := statePopulations["Georgia"]
+	if testPop, ok := statePopulations["Georgia"]; ok {
+		fmt.Println("Population in Georgia: " + strconv.Itoa(testPop) + "\nGeorgia exist in map: " + strconv.FormatBool(ok))
+	} else {
+		fmt.Println("Georgia no exist")
+	}
 
 	// Must use strconv.Itoa(int) when we want to convert int to string
 	fmt.Println("Number of populations in Ohio: " + strconv.Itoa(statePopulations["Ohio"]))
