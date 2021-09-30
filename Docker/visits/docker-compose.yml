@@ -1,0 +1,12 @@
+# Version of docker compose
+version: '3'
+
+# When we see services, can see it as types of container
+services: 
+  redis-server:
+    image: 'redis'
+  node-app:
+    restart: always # restart policy, will always restart when sth went wrong
+    build: . # . means look in current directory for a docker file and use it to build an image
+    ports: # - in yml file means array
+      - "4001:8081" # <port in local machine>:<port in container>
