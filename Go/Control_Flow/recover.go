@@ -10,6 +10,8 @@ func main() {
 }
 
 func run() {
+
+	// Recover is only useful in deferred function!!
 	defer func() {
 		if r := recover(); r != nil {
 			fmt.Println("Recovered!")

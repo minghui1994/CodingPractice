@@ -24,9 +24,9 @@
 
 <h3>Control Flow<h3>
 
-* [defer statement](https://github.com/minghui1994/CodingPractice/blob/main/Go/Control_Flow/defer.go
+* [defer statement](https://github.com/minghui1994/CodingPractice/blob/main/Go/Control_Flow/defer.go)
 
-* [recover statement]()
+* [recover statement](https://github.com/minghui1994/CodingPractice/blob/main/Go/Control_Flow/recover.go)
 
 * [panic statement](https://github.com/minghui1994/CodingPractice/blob/main/Go/Control_Flow/panic.go)
 
